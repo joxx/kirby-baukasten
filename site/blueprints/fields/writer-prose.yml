@@ -1,0 +1,12 @@
+extends: fields/writer
+inline: false
+nodes:
+  - paragraph
+  - heading
+  - bulletList
+  - orderedList
+headings:
+  - 2
+  - 3
+  - 4
+  - 5

@@ -1,0 +1,26 @@
+icon: cog
+label: global-settings
+columns:
+  - width: 1/4
+    fields:
+      _navigation:
+        label: navigation
+        type: headline
+  - width: 3/4
+    sections:
+      placeholder: &placeholder
+        headline: Placeholder
+        type: info
+        text: ' '
+  - width: 1
+    fields:
+      _line1: &line
+        type: line
+  - width: 1/4
+    fields:
+      _footer:
+        label: footer
+        type: headline
+  - width: 3/4
+    sections:
+      placeholder: *placeholder

@@ -1,0 +1,23 @@
+title: overview
+
+tabs:
+  main:
+    icon: page
+    label: navigation
+    columns:
+      - width: 2/3
+        sections:
+          pages:
+            label: pages
+            type: pages
+            info: '/{{ page.slug }}'
+            create:
+              - layout
+            templates:
+              - home
+              - error
+              - layout
+            image: icon
+  global: tabs/global-settings
+  seo: seo/site
+  admin: programmatic/admin-tools

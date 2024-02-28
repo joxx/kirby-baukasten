@@ -1,0 +1,7 @@
+title: admin
+description: admin-description
+
+# Hidden element to hide notice in user management
+# Remove if you want to implement fields for your users
+fields:
+  hidden: true

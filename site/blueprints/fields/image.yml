@@ -1,0 +1,10 @@
+label: image
+type: files
+uploads:
+  parent: site.find('page://images')
+  template: image
+multiple: false
+image:
+  cover: false
+info: '{{ file.alt }}'
+query: site.find('page://images').images.filterBy('template', 'image')

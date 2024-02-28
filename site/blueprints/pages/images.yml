@@ -1,0 +1,61 @@
+title: images
+image:
+  icon: folder
+  back: 'var(--theme-primary)'
+  color: 'var(--theme-accent)'
+
+options:
+  preview: false
+  delete: false
+  changeSlug: false
+  changeStatus: false
+  duplicate: false
+  changeTitle: false
+
+status:
+  draft: false
+  unlisted: true
+  listed: false
+
+tabs:
+  list:
+    label: list-view
+    icon: list-bullet
+    sections:
+      list:
+        headline: images
+        type: files
+        template: image
+        layout: table
+        size: tiny
+        limit: 60
+        uploads:
+          template: image
+        search: true
+        columns:
+          alt:
+            label:
+              de: Alt-Text
+              en: Alt text
+            value: '{{ file.alt }}'
+          tags:
+            label:
+              de: Schlagwörter
+              en: Tags
+            type: tags
+        sortBy: filename desc
+  grid:
+    label: grid-view
+    icon: grid
+    sections:
+      grid:
+        label: images
+        type: files
+        template: image
+        layout: cardlets
+        limit: 60
+        uploads:
+          template: image
+        info: '{{ file.alt.isNotEmpty ? file.filename : "" }}'
+        text: '{{ file.alt.or(file.filename) }}'
+        sortBy: filename desc
